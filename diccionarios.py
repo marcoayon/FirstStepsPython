@@ -68,4 +68,6 @@ if 'Eduardo' in lista:
 else:
     lista['Eduardo'] = 45     
 
-print(f'la edad de {lista["Eduardo"]} es de {lista["Eduardo"]}')
+for nombre in lista.keys():
+    if nombre == 'Eduardo':
+        print(f'Ahora la edad de {nombre} es de {lista["Eduardo"]}')
