@@ -48,3 +48,24 @@ print(f'Su nombre es {persona["nombre"]} su apellido paterno es {persona["patern
 
 #Para eliminar un campo del diccionario se usa pop
 persona.pop("distrito")
+
+#El uso del método keys() usado para recuperar todos los valores de un diccionario
+
+lista = {
+    'Marco' : 49,
+    'Eduardo': 50,
+    'Rogger' : 41,
+    'Luis' : 27,
+    'Edgar' : 31
+}
+for key in lista.keys():
+    print(f'{key} tiene la edad de {lista[key]} años')
+
+#Para poder encontrar un key dentro del diccionario se usa el método in    
+
+if 'Eduardo' in lista:
+    lista['Eduardo'] = lista['Eduardo'] + 1
+else:
+    lista['Eduardo'] = 45     
+
+print(f'la edad de {lista["Eduardo"]} es de {lista["Eduardo"]}')
